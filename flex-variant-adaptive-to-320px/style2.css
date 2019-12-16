@@ -1,0 +1,190 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #4f5961;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .widget {
+  width: 390px;
+  height: 465px;
+  border-radius: 15px;
+  background: #FFF;
+}
+.wrapper .widget__header {
+  box-sizing: border-box;
+  height: 330px;
+  padding: 0 0 15px 0;
+  position: relative;
+}
+.wrapper .widget__header__main {
+  height: 200px;
+}
+.wrapper .widget__header__main .weather-image {
+  height: 230px;
+  position: relative;
+}
+.wrapper .widget__header__main .weather-image-picture {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -70px 0 0 -70px;
+  width: 140px;
+  height: 140px;
+  background-image: url("img/main.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.wrapper .widget__header__main .weather-image .back-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  background-image: url("img/back-arrow.png");
+  background-size: cover;
+}
+.wrapper .widget__header__main .weather-image .back-arrow a {
+  display: block;
+  height: 100%;
+}
+.wrapper .widget__header__main .description {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+.wrapper .widget__header__main .description__temperature {
+  display: flex;
+  position: relative;
+  padding-left: 15px;
+  color: #a2a9ad;
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 70px;
+}
+.wrapper .widget__header__main .description__temperature::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 0px;
+  right: -10px;
+  border: 3px solid #a2a9ad;
+  border-radius: 50%;
+}
+.wrapper .widget__header__main .description__country {
+  line-height: 35px;
+}
+.wrapper .widget__header__main .description__country p:nth-child(1) {
+  color: #c9d0d4;
+  font-size: 20px;
+  font-weight: 300;
+}
+.wrapper .widget__header__main .description__country p:nth-child(2) {
+  color: #a2a9ad;
+  font-size: 20px;
+}
+.wrapper .widget__header__main .description__date {
+  width: 65px;
+  height: 70px;
+  background-color: #54bae6;
+  color: #fff;
+  line-height: 35px;
+}
+.wrapper .widget__header__main .description__date p {
+  text-align: center;
+  font-size: 20px;
+}
+.wrapper .widget__footer {
+  box-sizing: border-box;
+  background: #2e3335;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 45px 45px 20px 45px;
+  color: #fff;
+}
+.wrapper .widget__footer .panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .widget__footer .panel-item {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 45px;
+}
+.wrapper .widget__footer .panel-item:nth-child(1)::before {
+  background-image: url("img/waves.png");
+}
+.wrapper .widget__footer .panel-item:nth-child(2)::before {
+  background-image: url("img/ink.svg");
+}
+.wrapper .widget__footer .panel-item:nth-child(3)::before {
+  background-image: url("img/sun.png");
+}
+.wrapper .widget__footer .panel-item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  top: calc(50% - 12.5px);
+  fill: #525a5d;
+  background-size: cover;
+}
+.wrapper .widget__footer .panel span {
+  vertical-align: middle;
+}
+.wrapper .widget__footer .slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  margin: auto;
+}
+.wrapper .widget__footer .slider-checkbox {
+  border: 3px solid grey;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.wrapper .widget__footer .slider-checkbox a {
+  display: block;
+  height: 100%;
+}
+.wrapper .widget__footer .slider .active-checkbox {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+@media (max-width: 600px) {
+  .wrapper .widget {
+    border: 1px solid red;
+  }
+  .wrapper .widget__header__main .description__country p:nth-child(1) {
+    font-size: 15px;
+  }
+  .wrapper .widget__header__main .description__country p:nth-child(2) {
+    font-size: 15px;
+  }
+  .wrapper .widget__header__main .description__date p {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
